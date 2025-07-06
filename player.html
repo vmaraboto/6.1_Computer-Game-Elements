@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6.1</title>
+    <h2 id="h2Hero">Player Information</h2>
+    <!-- link to page icon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- link to stylesheet -->
+    <link rel="stylesheet" href="player.css">
+</head>
+<body>
+    <header>
+        <h1>Assignment 6.1: Computer Game Elements</h1>
+    </header>
+
+    <main>
+        <!-- playerContainer with all the coontent -->
+        <section class="playerContainer">
+            <!-- gives user an idea of what this page is for -->
+            <h2>Enter Player Info:</h2>
+            <!-- player form -->
+            <form id="frmPlayer" name="frmPlayer">
+                <!-- label and input for username -->
+                <label for="txtUser">Username: </label>
+                <input type="text" id="txtUser" name="txtUser">
+                <br>
+
+                <!-- label and input for weapon -->
+                <label for="txtWeapon">Weapon: </label>
+                <input type="text" id="txtWeapon" name="txtWeapon">
+                <br>
+
+                <!-- label and input for health -->
+                <label for="numHealth">Health: </label>
+                <input type="number" id="numHealth" name="numHealth">
+                <br>
+
+                <!-- label and input for points -->
+                <label for="numPoints">Points: </label>
+                <input type="number" id="numPoints" name="numPoints">
+                <br>
+
+                <!-- form processing button -->
+                <button type="button" onclick="processForm();">Create Player</button>
+            </form>
+
+            <!-- playerInfo container -->
+            <div id="playerInfo">
+                <!-- hidden HTML elements -->
+                <h2 id="h2Player" style="display: none;">Player Information</h2>
+                <div id="divOutput" style="display: none;"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="player.js"></script>
+</body>
+</html>
